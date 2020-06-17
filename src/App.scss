@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.turnBlue {
+  background-color: red;
+  &:hover{
+    background-color: blue;
+  }
+}
