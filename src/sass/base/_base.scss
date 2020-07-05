@@ -1,0 +1,19 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /*converts box sizing to inheritable which is applied to body and thus to all below*/
+}
+
+html {
+    font-size: 62.5%; /*Set root font size 62.5% of root font size which normally is 16 sets our root font size to 10px to 
+                        make calculations easy, yet allow the user to change fontsize in the browser. Defines what 1rem is*/
+
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+}
