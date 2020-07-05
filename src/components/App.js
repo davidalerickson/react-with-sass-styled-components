@@ -13,7 +13,7 @@ class App extends React.Component {
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <p className="turnBlue">
-            This should have a red background which turns blue when hovered over. Which means that SASS is working 
+            This should have a red background which turns blue when hovered over. Which means that SASS is working
           </p>
           <a
             className="App-link"
