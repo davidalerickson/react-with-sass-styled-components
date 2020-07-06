@@ -1,12 +1,18 @@
 import React from 'react';
-import Gallery from '..Gallery/Gallery';
+import Gallery from '../Gallery';
+import Overview from './Overview';
 import './MainPanel.scss';
 
 class MainPanel extends React.Component {
 
     render() {
         return (
-            <Gallery />
+            <div className="main-panel">
+                <Gallery />
+                <Overview />
+
+            </div>
+            
         )
         }
 }
