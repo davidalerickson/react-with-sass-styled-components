@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (<>
 
-        <Container>
+        <Container marginTB="8rem">
           THIS IS SOME TEXT IN CONTAINER And some more
                 <Header />
                 <Content>
