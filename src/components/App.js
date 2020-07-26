@@ -7,13 +7,24 @@ import MainPanel from './layout/MainPanel';
 import Gallery from './Gallery';
 import Overview from './layout/Overview';
 import Detail from './layout/Detail';
+import { ThemeProvider } from 'styled-components';
 
 class App extends React.Component {
 
+ state = { theme: {
+  colorPrimary: "#eb2f64",
+  colorPrimaryLight: "#FF3366",
+  colorPrimaryDark: "#BA265D"
+}}
+
+
   render() {
     return (<>
-
-        <Container marginTB="8rem">
+    <ThemeProvider theme={this.state.theme}>
+        <Container
+          marginTB="8rem"
+          maxWidth="120rem"
+        >
           THIS IS SOME TEXT IN CONTAINER And some more
                 <Header />
                 <Content>
@@ -25,6 +36,7 @@ class App extends React.Component {
                   </MainPanel>
                 </Content>
         </Container>
+      </ThemeProvider>
         </>
 
     );
