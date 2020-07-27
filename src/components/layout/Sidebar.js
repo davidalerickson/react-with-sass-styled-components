@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import './Sidebar.scss';
 import Menu from '../widgets/Menu';
 import LegalText from '../widgets/LegalText';
 
@@ -19,10 +18,10 @@ class Sidebar extends React.Component {
 
     render() {
         return (
-            <div className="sidebar">
+            <SidebarWrapper>
                 <Menu />
                 <LegalText/>
-            </div>
+            </SidebarWrapper>  
         )
         }
 }
