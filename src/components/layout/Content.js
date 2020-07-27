@@ -1,13 +1,22 @@
 import React from 'react';
-import './Content.scss';
+import styled from 'styled-components';
+
+const NavWrapper = styled.nav`
+    display: flex;
+    height: 120rem;
+    /* //switches sidebar to topbar */
+    @media only screen and (max-width: ${props => props.theme.bpMedium}) {
+        flex-direction: column; 
+    }
+`;
 
 class Content extends React.Component {
 
     render() {
         return (
-            <nav className="content">
+            <NavWrapper>
                 {this.props.children}
-            </nav>
+            </NavWrapper>
         )
         }
 }

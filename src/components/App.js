@@ -14,8 +14,13 @@ class App extends React.Component {
  state = { theme: {
   colorPrimary: "#eb2f64",
   colorPrimaryLight: "#FF3366",
-  colorPrimaryDark: "#BA265D"
+  colorPrimaryDark: "#BA265D",
+  bpLargest: "75em", //1200px
+  bpLarge: "68em", //1100px
+  bpMedium: "56.25em", //900px
 }}
+
+
 
 
   render() {
