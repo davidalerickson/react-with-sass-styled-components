@@ -30,7 +30,6 @@ class App extends React.Component {
           marginTB="8rem"
           maxWidth="120rem"
         >
-          THIS IS SOME TEXT IN CONTAINER And some more
                 <Header />
                 <Content>
                   <Sidebar />
