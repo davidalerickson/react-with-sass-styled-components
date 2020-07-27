@@ -1,5 +1,8 @@
 import React from 'react';
 import './Header.scss';
+import SearchBar from '../widgets/SearchBar';
+
+
 
 class Header extends React.Component {
 
@@ -7,7 +10,7 @@ class Header extends React.Component {
         return (
             <div className="header">
                 <div>Item 1</div>
-                <div>Item 2</div>
+                <SearchBar/>
                 <div>Item 3</div>
             </div>
         )
