@@ -13,15 +13,13 @@ const MenuWrapper = styled.ul`
     }
 `
 
-
-
 const Menu = () => {
     return (<>
             <MenuWrapper>
-                <MenuItem menuText="Hotels"/>
-                <MenuItem menuText="Flight"/>
-                <MenuItem menuText="Car Rental"/>
-                <MenuItem menuText="Tours"/>
+                <MenuItem iconPath="../../img/SVG/home.svg" menuText="Hotels"/>
+                <MenuItem iconPath="../../img/SVG/aircraft-take-off.svg" menuText="Flight"/>
+                <MenuItem iconPath="../../img/SVG/key.svg" menuText="Car Rental"/>
+                <MenuItem iconPath="../../img/SVG/map.svg" menuText="Tours"/>
             </MenuWrapper>
             </>
     )
