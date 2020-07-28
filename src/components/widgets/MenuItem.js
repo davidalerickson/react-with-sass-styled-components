@@ -7,12 +7,12 @@ const MenuItemWrapper = styled.li`
         &:not(:last-child) {
             margin-bottom: .5rem;
 
-            @media only screen and (max-width: $bp-medium) {
+            @media only screen and (max-width: ${props => props.theme.bpMedium}) {
                 margin: 0;
              }
         }
 
-        @media only screen and (max-width: $bp-medium) {
+        @media only screen and (max-width: ${props => props.theme.bpMedium}) {
             flex: 1;
          }
 
@@ -25,7 +25,7 @@ const MenuItemWrapper = styled.li`
             width: 3px;
             background-color: var(--color-primary);
             transform: scaleY(0);
-            //vert opening for .2s then delayed .2s with transition occurs
+            /* //vert opening for .2s then delayed .2s with transition occurs */
             transition: transform .2s,
                         width .4s cubic-bezier(1, 0, 0, 1) .2s,
                         background-color .2s;
@@ -33,7 +33,7 @@ const MenuItemWrapper = styled.li`
 
         &:hover::before,
         &item-active::before {
-            //transform origin default set to center
+            /* //transform origin default set to center */
             transform: scaleY(1);
             width: 100%;
         }
@@ -51,18 +51,21 @@ const MenuItemWrapper = styled.li`
         text-transform: uppercase;
         display: block;
         padding: 1.5rem 3rem;
-        //set display flexbox to verically center icon and text
+        /* //set display flexbox to verically center icon and text */
         display: flex;
         align-items: center;
-        z-index: 10; //make sure it is on top of animated back
-        position: relative; //so that zindex works
+        z-index: 10; 
+        /* //make sure it is on top of animated back */
+        position: relative;
+        /* //so that zindex works */
         
-        @media only screen and (max-width: $bp-medium) {
+        @media only screen and (max-width: ${props => props.theme.bpMedium}) {
             justify-content: center;
             padding: 2rem;
          }
 
-         @media only screen and (max-width: $bp-small) { //put icon on top of link text and reduce padding
+         @media only screen and (max-width: $${props => props.theme.bpSmall}) { 
+             /* //put icon on top of link text and reduce padding */
             flex-direction: column;
             padding: 1.5rem .5rem;
          }
@@ -73,7 +76,8 @@ const MenuItemWrapper = styled.li`
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor;
-        @media only screen and (max-width: $bp-small) { //get rid of right margin to allow centering of icon on top of link
+        @media only screen and (max-width: ${props => props.theme.bpSmall}) { 
+            /* //get rid of right margin to allow centering of icon on top of link */
             margin-right: 0;
             margin-bottom: 0.7rem;
             width: 1.5rem;

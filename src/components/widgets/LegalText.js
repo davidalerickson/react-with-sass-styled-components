@@ -7,7 +7,7 @@ const LegalTextWrapper = styled.div`
     text-align: center;
     padding: 2.5rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: ${props => props.theme.bpMedium}) {
         display: none;
      }
 `;
