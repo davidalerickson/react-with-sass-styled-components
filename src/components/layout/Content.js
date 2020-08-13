@@ -7,7 +7,6 @@ const NavWrapper = styled.nav`
     /* //switches sidebar to topbar */
     @media only screen and (max-width: ${props => props.theme.bpMedium}) {
         flex-direction: column; 
-        height: auto;
     }
 `;
 
